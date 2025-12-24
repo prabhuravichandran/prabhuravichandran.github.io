@@ -460,7 +460,29 @@ Agentic AI systemsâ€”where language models autonomously plan, reason, and a
 
 **Architecture Diagram**:
 
-[ReAct Agent Loop Diagram - Shows iterative cycle of THOUGHT â†’ ACTION â†’ OBSERVATION]
+```
+graph TD
+    Start[User Query] --> Thought[THOUGHT: Analyze & Plan]
+    Thought --> Decision{Task Complete?}
+    Decision -->|No| Action[ACTION: Select & Execute Tool]
+    Action --> Observation[OBSERVATION: Process Results]
+    Observation --> Thought
+    Decision -->|Yes| Answer[Final Answer]
+    Answer --> End[Done]
+    
+    style Thought fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
+    style Action fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+    style Observation fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    style Answer fill:#e8f5e9,stroke:#388e3c,stroke-width:2px
+```
+
+**Example Flow**:
+- **THOUGHT**: "I need to check the current weather in Seattle"
+- **ACTION**: Call `weather_api.get_current("Seattle")`
+- **OBSERVATION**: `{"temp": 45, "condition": "Rainy"}`
+- **THOUGHT**: "I have the answer, task complete"
+- **Answer**: "The current weather in Seattle is 45°F and rainy"
+```
 
 **Python Implementation Example**:
 

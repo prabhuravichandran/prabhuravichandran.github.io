@@ -1,5 +1,3 @@
-# Prabhu Ravichandran's Technical Blog
-
 [![Blog](https://img.shields.io/badge/Blog-prabhuravichandran.github.io-blue)](https://prabhuravichandran.github.io)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5)](https://linkedin.com/in/prabhuravichandran)
 

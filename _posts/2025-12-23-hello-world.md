@@ -1,3 +1,10 @@
+---
+layout: post
+title: "Software Design: The Art of Simplicity"
+date: 2025-12-23
+---
+{% include mermaid.html %}
+
 # Software Design: The Art of Simplicity
 ## Enhanced Edition with Code Examples & Architecture Diagrams
 

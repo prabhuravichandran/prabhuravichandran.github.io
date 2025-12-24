@@ -110,6 +110,26 @@ Enterprise integration has evolved through several paradigm shifts, each represe
 
 Early integration relied on point-to-point connections between systemsâ€”a quadratic complexity nightmare (N systems require N(N-1)/2 connections). The introduction of message brokers linearized this to N connections, each system integrating once with the broker.
 
+```mermaid
+graph TB
+    subgraph "Point-to-Point (N² Complexity)"
+        A1[System A] <--> B1[System B]
+        A1 <--> C1[System C]
+        B1 <--> C1
+    end
+    
+    subgraph "Message Broker (N Complexity)"
+        A2[System A] --> MB[Message Broker]
+        B2[System B] --> MB
+        C2[System C] --> MB
+        MB --> A2
+        MB --> B2
+        MB --> C2
+    end
+    
+    style MB fill:#e3f2fd,stroke:#1976d2,stroke-width:3px
+```
+
 **Key Patterns**:
 - **Message Channel**: Decouples sender and receiver via an intermediary queue or topic.
 - **Publish-Subscribe**: Allows one-to-many communication without tight coupling, enabling new subscribers to join without modifying publishers.
@@ -124,6 +144,29 @@ Enterprise Service Buses centralized orchestration logic, creating a single poin
 **Choreography vs. Orchestration in Saga Pattern**:
 - **Orchestration**: A central coordinator explicitly invokes each step. Simpler to understand and debug but introduces a single point of failure.
 - **Choreography**: Each service listens for events and triggers the next step. More resilient but harder to trace and reason about.
+
+```mermaid
+graph TB
+    subgraph "Orchestration Pattern"
+        SO[Saga Orchestrator] -->|1. Reserve Inventory| S1[Inventory Service]
+        SO -->|2. Process Payment| S2[Payment Service]
+        SO -->|3. Ship Order| S3[Shipping Service]
+        S1 -->|Success/Fail| SO
+        S2 -->|Success/Fail| SO
+        S3 -->|Success/Fail| SO
+    end
+    
+    subgraph "Choreography Pattern"
+        E1[Order Created Event] --> IS[Inventory Service]
+        IS -->|Inventory Reserved Event| PS[Payment Service]
+        PS -->|Payment Processed Event| SS[Shipping Service]
+        SS -->|Shipped Event| E2[Complete]
+    end
+    
+    style SO fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+    style E1 fill:#e8f5e9,stroke:#388e3c,stroke-width:2px
+    style E2 fill:#e8f5e9,stroke:#388e3c,stroke-width:2px
+```
 
 The choice between these patterns exemplifies de Bono's Rule 9 (trade off other values): orchestration trades operational complexity for cognitive simplicity; choreography does the reverse.
 
@@ -310,6 +353,30 @@ Distributed systems confront inherent complexity: partial failures, network dela
 ### Circuit Breaker
 
 **Pattern**: Monitors calls to a service and "trips" (rejects requests) when failures exceed a threshold, preventing cascading failures.
+
+```mermaid
+stateDiagram-v2
+    [*] --> Closed
+    Closed --> Open : Failure threshold exceeded
+    Open --> HalfOpen : Timeout expired
+    HalfOpen --> Closed : Success
+    HalfOpen --> Open : Failure
+    
+    note right of Closed
+        Normal operation
+        Requests pass through
+    end note
+    
+    note right of Open
+        Rejecting all requests
+        Waiting for timeout
+    end note
+    
+    note right of HalfOpen
+        Testing recovery
+        Limited requests
+    end note
+```
 
 **Simplicity Lens**: The pattern decomposes failure handling into three states:
 1. **Closed**: Normal operation.

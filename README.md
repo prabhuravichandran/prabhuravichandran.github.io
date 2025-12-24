@@ -19,18 +19,18 @@ Senior Software Engineer with deep expertise in distributed systems, cloud archi
 
 ## 📝 Latest Posts
 
-### [Software Design: The Art of Simplicity](https://prabhuravichandran.github.io/2025/12/23/hello-world.html)
-*December 23, 2025*
+### [The Cost of Complexity](https://prabhuravichandran.github.io/2025/12/23/hello-world.html)*December 23, 2025*
 
-A comprehensive synthesis of Edward de Bono's simplicity principles with modern software patterns:
-- 10 Rules of Simplicity applied to software engineering
-- Enterprise Integration Patterns (Saga, Circuit Breaker, Event-Driven Architecture)
-- Distributed Systems Patterns (Replication, Sharding, Leader Election)
-- Agentic AI Design Patterns (ReAct, Multi-Agent Collaboration)
-- Complete with code examples in Java & Python
-- Interactive Mermaid architecture diagrams
 
-## 🛠️ Technical Toolkit
+Every line of code has a cost. This post explores why complexity is easy and simplicity is hard, drawing from years of building distributed systems at AWS.
+
+**Part 1 of a series on keeping systems simple**
+
+Upcoming posts:
+- When you actually need a microservice (and when you don't)
+- Patterns that reduce complexity instead of hiding it  
+- Real AWS examples that chose simplicity over sophistication
+- Why the best code is deleted code## 🛠️ Technical Toolkit
 
 **Languages**: Java, Python, SQL  
 **Cloud**: AWS (S3, Lambda, DynamoDB, Kinesis, SQS, SNS, Bedrock)  

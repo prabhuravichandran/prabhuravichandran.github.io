@@ -3,8 +3,6 @@ layout: post
 title: "Software Design: The Art of Simplicity"
 date: 2025-12-23
 ---
-{% include mermaid.html %}
-
 # Software Design: The Art of Simplicity
 ## Enhanced Edition with Code Examples & Architecture Diagrams
 
@@ -812,3 +810,8 @@ In the words of Antoine de Saint-ExupÃ©ry: "Perfection is achieved, not when t
 **About the Author**
 
 This essay synthesizes insights from over a decade of distributed systems engineering, enterprise architecture, and recent explorations in agentic AI. It is offered as a contribution to the ongoing discourse on how we might build systems that are not merely functional, but comprehensible, maintainable, andâ€”above allâ€”simple.
+
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: true });
+</script>

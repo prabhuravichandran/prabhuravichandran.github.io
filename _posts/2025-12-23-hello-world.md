@@ -811,7 +811,18 @@ In the words of Antoine de Saint-ExupÃ©ry: "Perfection is achieved, not when t
 
 This essay synthesizes insights from over a decade of distributed systems engineering, enterprise architecture, and recent explorations in agentic AI. It is offered as a contribution to the ongoing discourse on how we might build systems that are not merely functional, but comprehensible, maintainable, andâ€”above allâ€”simple.
 
-<script type="module">
-  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-  mermaid.initialize({ startOnLoad: true });
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Find all code blocks with language-mermaid class and convert them
+    document.querySelectorAll('code.language-mermaid').forEach(function(codeBlock) {
+      const pre = codeBlock.parentElement;
+      const div = document.createElement('div');
+      div.className = 'mermaid';
+      div.textContent = codeBlock.textContent;
+      pre.parentNode.replaceChild(div, pre);
+    });
+    // Initialize mermaid
+    mermaid.initialize({ startOnLoad: true, theme: 'default' });
+  });
 </script>

@@ -467,7 +467,7 @@ Agentic AI systemsâ€”where language models autonomously plan, reason, and a
 
 **Architecture Diagram**:
 
-```
+```mermaid
 graph TD
     Start[User Query] --> Thought[THOUGHT: Analyze & Plan]
     Thought --> Decision{Task Complete?}
@@ -482,7 +482,6 @@ graph TD
     style Observation fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
     style Answer fill:#e8f5e9,stroke:#388e3c,stroke-width:2px
 ```
-
 **Example Flow**:
 - **THOUGHT**: "I need to check the current weather in Seattle"
 - **ACTION**: Call `weather_api.get_current("Seattle")`

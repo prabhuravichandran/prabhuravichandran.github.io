@@ -2,4 +2,4 @@ title: Prabhu Ravichandran
 description: Notes on distributed systems, agentic AI, and scalable architecture.
 theme: minima
 plugins:
-  - jekyll-feed
+  - jekyll-include-cache

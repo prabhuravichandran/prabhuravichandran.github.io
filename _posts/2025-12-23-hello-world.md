@@ -10,5 +10,6 @@ Welcome to my new engineering blog. I'll be writing about:
 * **Agentic AI:** Orchestration patterns and runtime design.
 * **Distributed Systems:** Lessons from high-scale architecture.
 * **System Design:** Real-world patterns for reliability.
+* **Engineering Philosophy:** Designing complex systems with simple solutions is an art.
 
 Stay tuned.

@@ -3,7 +3,6 @@ layout: post
 title: "Software Design: The Art of Simplicity"
 date: 2025-12-23
 ---
-# Software Design: The Art of Simplicity
 
 In 1998, Edward de Bono published *Simplicity*, a compelling treatise on the deliberate pursuit of simplification across all domains of human endeavor. His central thesis is that simplicity is not discovered but designed. It resonates powerfully with modern software engineering, where complexity has become the primary adversary of maintainability, scalability, and reliability.
 
@@ -59,7 +58,7 @@ In distributed systems, the shift from leader-based replication to leaderless ar
 
 When incremental improvements fail to yield simplicity, wholesale redesign may be necessary. This rule acknowledges that sunk cost is an emotional barrier, not a technical one.
 
-**Software Application**: Kubernetes represents a radical restart in container orchestration, superseding earlier systems like Mesos and Docker Swarm. Rather than extending existing paradigms, Kubernetes introduced declarative configuration, reconciliation loops, and the control plane/data plane separationâ€”concepts that required rethinking orchestration from first principles.
+**Software Application**: Kubernetes represents a radical restart in container orchestration, superseding earlier systems like Mesos and Docker Swarm. Rather than extending existing paradigms, Kubernetes introduced declarative configuration, reconciliation loops, and the control plane/data plane separation concepts that required rethinking orchestration from first principles.
 
 In AI systems, the shift from fine-tuning to retrieval-augmented generation (RAG) similarly represents a restart: rather than embedding all knowledge in model weights, RAG separates retrieval from generation, yielding simpler, more maintainable systems.
 
@@ -335,7 +334,7 @@ Distributed systems confront inherent complexity: partial failures, network dela
 
 **Pattern**: Replication improves availability and fault tolerance by maintaining copies of data across nodes.
 
-**Simplicity Lens**: Rather than pursuing strong consistency everywhere, systems like Cassandra and DynamoDB adopt tunable consistencyâ€”allowing developers to trade consistency for availability on a per-request basis. This simplifies reasoning by making tradeoffs explicit.
+**Simplicity Lens**: Rather than pursuing strong consistency everywhere, systems like Cassandra and DynamoDB adopt tunable consistency allowing developers to trade consistency for availability on a per-request basis. This simplifies reasoning by making tradeoffs explicit.
 
 **De Bono Rule Applied**: Rule 9 (trade off other values). Strong consistency is sacrificed for operational simplicity and availability.
 
@@ -695,7 +694,7 @@ if __name__ == "__main__":
 
 **De Bono Rule Applied**: Rule 8 (break into smaller units). Multi-step reasoning is decomposed into discrete thought-action pairs.
 
-**Tradeoffs**: Each iteration requires an LLM call, increasing latency and cost. However, this trades performance for transparency and debuggabilityâ€”every reasoning step is observable.
+**Tradeoffs**: Each iteration requires an LLM call, increasing latency and cost. However, this trades performance for transparency and debuggability every reasoning step is observable.
 
 ### Sequential Coordination
 

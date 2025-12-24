@@ -779,13 +779,13 @@ Regularly audit systems to identify and eliminate unnecessary components. Treat 
 
 ## Conclusion: Simplicity as Discipline
 
-Edward de Bono's *Simplicity* posits that simplicity is not a destination but a disciplineâ€”a relentless, deliberate practice of design and redesign. In software engineering, this discipline manifests as pattern selection, architectural humility, and the courage to discard the complex in favor of the elegant.
+Edward de Bono's *Simplicity* posits that simplicity is not a destination but a discipline a relentless, deliberate practice of design and redesign. In software engineering, this discipline manifests as pattern selection, architectural humility, and the courage to discard the complex in favor of the elegant.
 
 Enterprise integration patterns teach us to communicate through messages, not monoliths. Distributed systems patterns teach us to embrace tradeoffs rather than pursue illusory perfection. Agentic AI patterns teach us to decompose intelligence into modular, inspectable processes.
 
 Across all domains, the same principles recur: **value simplicity explicitly, understand deeply, explore alternatives, decompose ruthlessly, and know for whom you simplify.**
 
-Complexity is the default state of systems. Simplicity is the artifact of intention. As systems scaleâ€”in data, in distribution, in intelligenceâ€”the imperative for simplicity intensifies. The systems that endure will not be those that do the most, but those that do the essential with the least.
+Complexity is the default state of systems. Simplicity is the artifact of intention. As systems scale in data, in distribution, in intelligence the imperative for simplicity intensifies. The systems that endure will not be those that do the most, but those that do the essential with the least.
 
 In the words of Antoine de Saint-Exupry: "Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away."
 
@@ -808,7 +808,7 @@ In the words of Antoine de Saint-Exupry: "Perfection is achieved, not when there
 
 **About the Author**
 
-This essay synthesizes insights from over a decade of distributed systems engineering, enterprise architecture, and recent explorations in agentic AI. It is offered as a contribution to the ongoing discourse on how we might build systems that are not merely functional, but comprehensible, maintainable, andâ€”above allâ€”simple.
+This essay synthesizes insights from over a decade of distributed systems engineering, enterprise architecture, and recent explorations in agentic AI. It is offered as a contribution to the ongoing discourse on how we might build systems that are not merely functional, but comprehensible, maintainable, and above all is simple.
 
 <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
 <script>

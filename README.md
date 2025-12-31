@@ -26,9 +26,19 @@ Every line of code has a cost. This post explores why complexity is easy and sim
 
 **Part 1 of a series on keeping systems simple**
 
-Upcoming posts:
-- When you actually need a microservice (and when you don't)
-- Patterns that reduce complexity instead of hiding it  
+### [The Microservices Question: When Do You Actually Need Them?](https://prabhuravichandran.github.io/2025/12/30/microservices-when-you-need-them.html) *December 30, 2025*
+
+Most teams that move to microservices regret it. This post explores when microservices actually make sense vs when a well-structured monolith is the better choice.
+
+**Part 2 of the simplicity series**
+
+Key questions answered:
+- What specific problems do microservices solve?
+- When should you actually split a monolith?
+- How to know if you're ready
+- The path most teams should take
+
+Upcoming posts:- Patterns that reduce complexity instead of hiding it  
 - Real AWS examples that chose simplicity over sophistication
 - Why the best code is deleted code## 🛠️ Technical Toolkit
 

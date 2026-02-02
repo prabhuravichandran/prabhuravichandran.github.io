@@ -103,4 +103,36 @@ Until AI can model organizational history and political context, I'm betting hum
 Here's the framework I use for AI-augmented work:
 
 **1. Start with the Focusing Question—for AI**
-Be
+Before every session: *"What's the ONE Thing I can define such that AI handles everything else?"* Write it down. If you can't articulate it, don't start the agent.
+
+**2. Define Blast Radius**
+Which files are in scope? Which are off-limits? What does "done" look like? Treat every AI task like a chaos experiment with boundaries.
+
+**3. Time-Block Judgment Work**
+Reserve high-cognition hours for specification. Delegate execution to AI later. Protect flow state.
+
+**4. Build Guardrails, Not Intentions**
+Design systems that catch AI failures automatically. Make the right behavior the default behavior.
+
+**5. Review Sequentially**
+AI generates in parallel; you cannot review in parallel. Pick one direction. See it through. Sequential focus beats parallel distraction.
+
+## The 57th Domino
+
+A 2-inch domino can eventually topple something that reaches the moon. Not by reaching the moon directly, but by knocking down the next domino, and the next.
+
+AI hasn't changed this principle. It's accelerated it.
+
+When I rebuilt that validation module—properly, with scope boundaries and a clear spec—Claude generated the solution in eight minutes. Eight minutes of execution, following two hours of specification. The spec was the first domino. Everything else fell from that.
+
+The engineers who define the next decade won't be the ones who generate the most code. They'll be the ones who identify the right domino with obsessive precision, constrain the blast radius, and protect their judgment.
+
+The 57th domino reaches the moon.
+The question isn't whether AI can knock it down.
+The question is: **who's choosing which domino falls first?**
+
+---
+
+*This is the third essay in a series exploring timeless principles in the age of AI. The previous essays covered "The Cost of Complexity" and "The Microservices Question."*
+
+*What's your ONE Thing for AI-augmented development? Where have you learned the most from AI failures? Find me on [LinkedIn](https://www.linkedin.com/in/prabhu-ravichandran-r/) or drop me a note.*

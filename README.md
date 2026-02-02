@@ -18,6 +18,12 @@ Senior Software Engineer with deep expertise in distributed systems, cloud archi
 - **System Design** - Architectural decision-making, simplicity principles
 
 ## 📝 Latest Posts
+### [The First Domino: Why The ONE Thing Matters More Than Ever in the Age of Agentic AI](https://prabhuravichandran.github.io/2026/02/01/the-first-domino.html)*February 1, 2026*
+
+AI amplifies whatever direction you give it. This post explores how Gary Keller's "The ONE Thing" framework becomes existential in the age of Agentic AI—and introduces the "First Domino Protocol" for AI-augmented engineering.
+
+**Part 3 of the simplicity series**
+
 
 ### [The Cost of Complexity](https://prabhuravichandran.github.io/2025/12/23/hello-world.html)*December 23, 2025*
 

@@ -3,11 +3,6 @@ layout: post
 title: "The First Domino: Why The ONE Thing Matters More Than Ever in the Age of Agentic AI"
 date: 2026-02-01
 ---
-
-Three weeks ago, I let Claude Code refactor a validation module in our codebase. I gave it what I thought was a clear spec: "Consolidate validation logic across these four files." I grabbed coffee, answered a few Slack messages, and returned to find 47 files changed, a broken build, and a Git history that looked like a crime scene.
-
-The AI hadn't done anything wrong, technically. It had found "validation logic" I'd forgotten about—legacy code from a feature we'd deprecated two years ago. It dutifully consolidated everything, including code paths that should have stayed dead. Two hours of debugging later, I had a painful realization: **the AI didn't know when to stop. That was my job.**
-
 After 13 years building distributed systems at Amazon, I've developed strong instincts for failure modes. I can smell a race condition before it manifests. But AI-augmented development has exposed a gap in my mental model—one that a book I'd read years ago, and mostly dismissed, suddenly made visceral.
 
 Gary Keller's "The ONE Thing" argues that extraordinary results come from narrowing focus, not expanding it. The core question is deceptively simple: *What's the ONE Thing I can do such that by doing it everything else will be easier or unnecessary?*
